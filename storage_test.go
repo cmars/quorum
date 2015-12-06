@@ -35,6 +35,7 @@ var _ = gc.Suite(&StorageSuite{})
 func (s *StorageSuite) SetUpTest(c *gc.C) {
 	s.store = quorum.NewMemStorage()
 }
+
 func (s *StorageSuite) TestDifferentiateElections(c *gc.C) {
 	election1 := quorum.Election{
 		Policy: quorum.Policy{
